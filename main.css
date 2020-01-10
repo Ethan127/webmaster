@@ -6,6 +6,26 @@ body {
     min-height: 110vh;
     background-color: #4ca1af;
     background-image: linear-gradient(135deg, #4ca1af 0%, #c4e0e5 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.imageHeader {
+    display: block;
+    background-image: url("https://article.images.consumerreports.org/f_auto/prod/content/dam/CRO%20Images%202019/Cars/December/CR-Cars-InlineHero-Ford-Mustang-Mach-E-Night-12-19");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: calc(100vh);
+}
+
+.navcontainer {
+    position: absolute;
+    margin: 20px;
+    width: auto;
 }
 
 
