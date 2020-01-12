@@ -45,15 +45,15 @@ body {
 }
 
 .navbar.active .nav-link {
-    color: #777;
+    color: #999;
 }
 
 .navbar.active .nav-link:hover,
 .navbar.active .nav-link:focus {
-    color: #777;
+    color: #999;
     text-decoration: none;
 }
 
 .navbar.active .navbar-brand {
-    color: #777;
+    color: #999;
 }
