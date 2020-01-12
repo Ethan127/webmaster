@@ -11,25 +11,6 @@ body {
     background-position: center;
 }
 
-.imageHeader {
-    display: block;
-    background-image: url("https://article.images.consumerreports.org/f_auto/prod/content/dam/CRO%20Images%202019/Cars/December/CR-Cars-InlineHero-Ford-Mustang-Mach-E-Night-12-19");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    width: 100%;
-    height: calc(100vh);
-}
-
-.navcontainer {
-    position: absolute;
-    margin: 20px;
-    width: auto;
-}
-
-
-
 .navbar {
     transition: all 0.4s;
 }
@@ -46,25 +27,4 @@ body {
 
 .navbar .navbar-brand {
     color: #fff;
-}
-
-
-/* Change navbar styling on scroll */
-.navbar.active {
-    background: #fff;
-    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.navbar.active .nav-link {
-    color: #555;
-}
-
-.navbar.active .nav-link:hover,
-.navbar.active .nav-link:focus {
-    color: #555;
-    text-decoration: none;
-}
-
-.navbar.active .navbar-brand {
-    color: #555;
 }
