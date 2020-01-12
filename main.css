@@ -40,20 +40,20 @@ body {
 
 /* Change navbar styling on scroll */
 .navbar.active {
-    background: #fff;
+    background: #111;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar.active .nav-link {
-    color: #555;
+    color: #777;
 }
 
 .navbar.active .nav-link:hover,
 .navbar.active .nav-link:focus {
-    color: #555;
+    color: #777;
     text-decoration: none;
 }
 
 .navbar.active .navbar-brand {
-    color: #555;
+    color: #777;
 }
