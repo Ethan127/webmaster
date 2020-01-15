@@ -36,17 +36,17 @@ body {
 }
 
 .navbar .nav-link {
-    color: #fff;
+    color: #333;
 }
 
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
-    color: #777;
+    color: #333;
     text-decoration: none;
 }
 
 .navbar .navbar-brand {
-    color: #fff;
+    color: #333;
 }
 
 
