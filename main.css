@@ -57,3 +57,21 @@ body {
 .navbar.active .navbar-brand {
     color: #999;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+.arrows {
+    font-size:60px;
+    color:grey;
+    padding: 60px;
+    opacity: 0.5;
+}
+
+.arrows:hover {
+    font-size:60px;
+    color:black;
+    padding: 60px;
+    opacity: 0.5;
+}
