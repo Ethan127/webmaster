@@ -70,8 +70,6 @@ html {
 }
 
 .arrows:hover {
-    font-size:60px;
-    color:black;
-    padding: 60px;
-    opacity: 0.5;
+    transition: 0.5s;
+    opacity: 0.8;
 }

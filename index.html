@@ -4,11 +4,11 @@
   <title>Rock Canyon</title>
 
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-  <script type="text/javascript" src="//code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="main.css">
-  <script type="text/javascript" src="main.js"></script><script>window.onload=homeNav();</script> <!--Changes transparency of navbar on scroll-->
+  <script type="text/javascript" src="main.js"></script><script>window.onload=homeNav(); window.onscroll=scroll();</script> <!--Changes transparency of navbar on scroll-->
 
 </head>
 <body>
@@ -32,14 +32,14 @@
 
         </div>
         <div id="arrows" style="position:absolute; text-align: center; width: 98vw; top: 85vh">
-          <a href="#car"><i class="fa fa-car arrows"></i></a>
-          <a href="#stats"><i class="fa fa-car arrows"></i></a>
+          <a href="#car"><i class="fa fa-arrow-up arrows"></i></a>
+          <a href="#stats"><i class="fa fa-arrow-down arrows"></i></a>
         </div>
     </nav>
 </header>
 
 
-<div style="height: 100vh; margin: 0 auto" id="car">
+<div class="innerdiv" style="height: 100vh; margin: 0 auto" id="c0">
     
   <div id="carouselExampleIndicators" height="calc(25vh-80px)" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -82,7 +82,7 @@
 </div>
 
 
-<div class="container" style="height:100vh; width: 100vw;" id="stats">
+<div class="container innerdiv" style="height:100vh; width: 100vw;" id="c1">
   <br><br><br>
   <div class="pt-5 text-white">
 
@@ -102,7 +102,7 @@
 </div>
 
 
-<div style="text-align: center;" id="vid">
+<div clsas="innerdiv" style="text-align: center;" id="c2">
   <video width="100%" height="100%" style="object-fit: fill;" autoplay loop muted>
     <source src="assets/rockcanyon.mp4" type="video/mp4">
     Your browser does not support the video tag.
@@ -111,4 +111,15 @@
 
 
 </body>
+
+<script>
+  $(function() {
+      $(".innerdiv").each( function(){
+          if($(this).is(':visible')){
+              alert($(this).attr("id"));
+          }
+      });
+  });
+</script>
+
 </html>

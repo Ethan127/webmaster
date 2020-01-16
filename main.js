@@ -21,3 +21,16 @@ var otherNav=function(){
         });
     });
 }
+
+function scroll (a){
+    var loc;
+    var x = document.activeElement.tagName;
+    if (a==="up"){
+        loc = 'c' + x.charAt(1) - 1;
+    }
+    if (a==="down"){
+        loc = 'c' + x.charAt(1) + 1;
+    }
+    console.log(loc);
+    //location.href = loc;
+}
