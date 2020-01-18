@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="main.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <script type="text/javascript" src="main.js"></script><script>//window.onload=homeNav();</script> <!--Changes transparency of navbar on scroll-->
+  <script type="text/javascript" src="main.js"></script><script>window.onload=homeNav();</script> <!--Changes transparency of navbar on scroll-->
 
 </head>
 <body>
@@ -51,9 +51,9 @@
     </ol>
     <div class="carousel-inner">
 
-      <div class="carousel-item">
+      <div class="carousel-item active">
 
-        <div clsas="innerdiv" style="text-align: center;" id="c2" alt="First slide">
+        <div clsas="innerdiv" style="text-align: center;" alt="First slide">
           <video width="100%" height="100%" style="object-fit: fill;" autoplay loop muted>
             <source src="assets/rockcanyon.mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -62,7 +62,7 @@
 
       </div>
       
-      <div class="carousel-item active">
+      <div class="carousel-item">
       
         <img style="height: 100vh" class="d-block w-100" src="https://rockcanyonjags.com/wp-content/uploads/2016/08/JennaWW-1024x768.jpg" alt="Second slide">
         
@@ -105,9 +105,18 @@
           <li>One of the first schools in the nation to do Wish week. A schoolwide event where everyone comes together to support a kid in need. </li><br>
         </ul>
 
-        <div class="overlay">
-          <div class="sector" style="transform: rotate(180deg) skew(60deg);"></div>
-        </div>
+
+
+        <canvas id="mycanvas" width="500" height="500"></canvas>
+        <script type="text/javascript">
+          var canvas = document.getElementById('mycanvas');
+          var ctx = canvas.getContext('2d');
+          ctx.beginPath();
+          ctx.arc(100, 100, 50, 0, 1.5 * Math.PI, false);
+          ctx.lineWidth = 10;
+          ctx.stroke();
+        </script>
+
         
       </div>
     </div>
