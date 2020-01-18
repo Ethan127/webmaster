@@ -109,13 +109,44 @@
 
         <canvas id="mycanvas" width="500" height="500"></canvas>
         <script type="text/javascript">
+          
           var canvas = document.getElementById('mycanvas');
           var ctx = canvas.getContext('2d');
           ctx.beginPath();
-          ctx.arc(100, 100, 50, 0, 1.5 * Math.PI, false);
+          ctx.arc(100, 100, 50, -Math.PI/2, 2*Math.PI * 95/100 - Math.PI/2, false);
           ctx.lineWidth = 10;
+          ctx.strokeStyle = "grey" //CHANGE THE COLOR OF CIRCLE
           ctx.stroke();
+          
+          ctx.font = "36px Arial";
+          ctx.fillText("95%", 67.5, 112.5);
+          
+          
+          ctx.font = "12px Arial";
+          ctx.fillText("Of Students Graduate RCHS", 25, 175);
+          
+          
+          
+          
+          
+          ctx.beginPath();
+          ctx.arc(300, 100, 50, -Math.PI/2,  2*Math.PI * 40/100 - Math.PI/2, false);
+          ctx.lineWidth = 10;
+          ctx.strokeStyle = "grey" //CHANGE THE COLOR OF CIRCLE
+          ctx.stroke();
+          
+          ctx.font = "36px Arial";
+          ctx.fillText("40%", 267.5, 112.5);
+          
+          
+          ctx.font = "12px Arial";
+          ctx.fillText("Of Students Take AP Courses", 225, 175);
+          
+          
+          
+          
         </script>
+
 
         
       </div>
