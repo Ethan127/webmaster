@@ -88,8 +88,8 @@
 </div>
 
 
-<div class="row" style="height:100vh; width: 100vw; padding-top: 100px;" id="c1">
-
+<div style="height:100vh; width: 100vw; padding-top: 100px;" id="c1">
+  <div class="row">
   <div class="col">
     <div class="pt-5 text-white">
       <div class="statistics">
@@ -106,48 +106,6 @@
         </ul>
 
 
-
-        <canvas id="mycanvas" width="500" height="500"></canvas>
-        <script type="text/javascript">
-          
-          var canvas = document.getElementById('mycanvas');
-          var ctx = canvas.getContext('2d');
-          ctx.beginPath();
-          ctx.arc(100, 100, 50, -Math.PI/2, 2*Math.PI * 95/100 - Math.PI/2, false);
-          ctx.lineWidth = 10;
-          ctx.strokeStyle = "grey" //CHANGE THE COLOR OF CIRCLE
-          ctx.stroke();
-          
-          ctx.font = "36px Arial";
-          ctx.fillText("95%", 67.5, 112.5);
-          
-          
-          ctx.font = "12px Arial";
-          ctx.fillText("Of Students Graduate RCHS", 25, 175);
-          
-          
-          
-          
-          
-          ctx.beginPath();
-          ctx.arc(300, 100, 50, -Math.PI/2,  2*Math.PI * 40/100 - Math.PI/2, false);
-          ctx.lineWidth = 10;
-          ctx.strokeStyle = "grey" //CHANGE THE COLOR OF CIRCLE
-          ctx.stroke();
-          
-          ctx.font = "36px Arial";
-          ctx.fillText("40%", 267.5, 112.5);
-          
-          
-          ctx.font = "12px Arial";
-          ctx.fillText("Of Students Take AP Courses", 225, 175);
-          
-          
-          
-          
-        </script>
-
-
         
       </div>
     </div>
@@ -158,7 +116,48 @@
       <a class="twitter-timeline" data-width="500" data-height="400" data-theme="dark" href="https://twitter.com/RockCanyonHS?ref_src=twsrc%5Etfw">Tweets by RockCanyonHS</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
   </div>
+  </div>
+  <canvas id="mycanvas" style="width: 100vw; height: 500px" height="500px"></canvas>
+  <script type="text/javascript">
+    var canvas = document.getElementById('mycanvas');
+    canvas.setAttribute('width', window.innerWidth);
+    var ctx = canvas.getContext('2d');
+    ctx.beginPath();
+    ctx.arc(200, 200, 150, -Math.PI/2, 2*Math.PI * 95/100 - Math.PI/2, false);
+    ctx.lineWidth = 10;
+    ctx.strokeStyle = "white"
+    ctx.stroke();
+    
+    ctx.font = "100px Arial";
+    ctx.fillStyle = "white";
+    ctx.fillText("95%", 112.5, 235);
+    
+    
+    ctx.font = "27.5px Arial";
+    ctx.fillText("Of Students Graduate RCHS", 25, 400);
 
+
+
+
+
+    ctx.beginPath();
+    ctx.arc(700, 200, 150, -Math.PI/2, 2*Math.PI * 95/100 - Math.PI/2, false);
+    ctx.lineWidth = 10;
+    ctx.strokeStyle = "white"
+    ctx.stroke();
+    
+    ctx.font = "100px Arial";
+    ctx.fillStyle = "white";
+    ctx.fillText("85%", 612.5, 235);
+    
+    
+    ctx.font = "27.5px Arial";
+    ctx.fillText("Of Students Graduate RCHS", 525, 400);
+
+    
+    
+    
+  </script>
 </div>
 
 
