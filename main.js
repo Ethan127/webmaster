@@ -34,4 +34,3 @@ function scroll (a){
     console.log(loc);
     //location.href = loc;
 }
-
