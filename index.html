@@ -8,7 +8,6 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="main.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <script type="text/javascript" src="main.js"></script><script>window.onload=homeNav();</script> <!--Changes transparency of navbar on scroll-->
 
 </head>
@@ -25,7 +24,7 @@
             <div id="navbarSupportedContent" class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active"><a href="index.html" class="nav-link font-weight-bold">Home</a></li>
-                    <li class="nav-item"><a href="tsa.html" class="nav-link">TSA</a></li>
+                    <li class="nav-item"><a href="tsa.html" class="nav-link">CTE</a></li>
                     <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="designbrief/index.html" class="nav-link">Design Brief</a></li>
                 </ul>
@@ -40,7 +39,7 @@
 </header>
 
 
-<div class="innerdiv w3-animate-opacity" style="height: 100vh; margin: 0 auto" id="c0">
+<div class="innerdiv" style="height: 100vh; margin: 0 auto" id="c0">
     
   <div id="carouselExampleIndicators" height="calc(25vh-80px)" class="carousel slide" data-ride="carousel" data-interval="false">
     <ol class="carousel-indicators">
@@ -96,7 +95,7 @@
         <h4 style="text-align:center; color:white">
               Statistics
         </h4> 
-        <ul>
+        <ul data-aos="zoom-in">
           <li>99% graduation rate.</li><br>
           <li>85% of graduates pursue college.</li><br>
           <li>Average SAT: 1260</li><br>
@@ -117,43 +116,59 @@
     </div>
   </div>
   </div>
-  <canvas id="mycanvas" style="width: 100vw; height: 500px" height="500px"></canvas>
+  <canvas data-aos="zoom-in" id="mycanvas" style="width: 100vw; height: 500px" height="500px"></canvas>
   <script type="text/javascript">
     var canvas = document.getElementById('mycanvas');
     canvas.setAttribute('width', window.innerWidth);
     var ctx = canvas.getContext('2d');
     ctx.beginPath();
-    ctx.arc(200, 200, 150, -Math.PI/2, 2*Math.PI * 95/100 - Math.PI/2, false);
+    ctx.arc(250, 200, 150, -Math.PI/2, 2*Math.PI * 95/100 - Math.PI/2, false);
     ctx.lineWidth = 10;
     ctx.strokeStyle = "white"
     ctx.stroke();
     
     ctx.font = "100px Arial";
     ctx.fillStyle = "white";
-    ctx.fillText("95%", 112.5, 235);
+    ctx.fillText("95%", 162.5, 235);
     
     
     ctx.font = "27.5px Arial";
-    ctx.fillText("Of Students Graduate RCHS", 25, 400);
+    ctx.fillText("Of Students Graduate RCHS", 75, 400);
 
 
 
 
 
     ctx.beginPath();
-    ctx.arc(700, 200, 150, -Math.PI/2, 2*Math.PI * 95/100 - Math.PI/2, false);
+    ctx.arc(800, 200, 150, -Math.PI/2, 2*Math.PI * 100/100 - Math.PI/2, false);
     ctx.lineWidth = 10;
     ctx.strokeStyle = "white"
     ctx.stroke();
     
     ctx.font = "100px Arial";
     ctx.fillStyle = "white";
-    ctx.fillText("85%", 612.5, 235);
+    ctx.fillText("2200", 690, 235);
     
     
     ctx.font = "27.5px Arial";
-    ctx.fillText("Of Students Graduate RCHS", 525, 400);
+    ctx.fillText("Students Are Enrolled", 475, 400);
 
+
+
+
+    ctx.beginPath();
+    ctx.arc(1350, 200, 150, -Math.PI/2, 2*Math.PI * 85/100 - Math.PI/2, false);
+    ctx.lineWidth = 10;
+    ctx.strokeStyle = "white"
+    ctx.stroke();
+    
+    ctx.font = "100px Arial";
+    ctx.fillStyle = "white";
+    ctx.fillText("85%", 1252.5, 235);
+    
+    
+    ctx.font = "27.5px Arial";
+    ctx.fillText("Of Graduates Pursue College", 1175, 400);
     
     
     
