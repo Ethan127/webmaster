@@ -6,11 +6,18 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script type="text/javascript" src="main.js"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link rel="stylesheet" type="text/css" href="main.css">
-  <script type="text/javascript" src="main.js"></script><script>window.onload=homeNav(); AOS.init();</script> <!--Changes transparency of navbar on scroll-->
+  <script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+        AOS.init();
+    });
+    window.onload=homeNav(); //Changes transparency of navbar on scroll
+  </script>
 
 </head>
 <body>
@@ -32,11 +39,7 @@
                 </ul>
             </div>
 
-        </div><!--Changes
-        <div id="arrows" style="position:absolute; text-align: center; width: 98vw; top: 85vh">
-          <a href="#car"><i class="fa fa-arrow-up arrows"></i></a>
-          <a href="#stats"><i class="fa fa-arrow-down arrows"></i></a>
-        </div>-->
+        </div>
     </nav>
 </header>
 
@@ -93,7 +96,7 @@
   <div class="row">
   <div class="col">
     <div class="pt-5 text-white">
-      <div class="statistics">
+      <div class="statistics" data-aos="fade-right">
         <h4 style="text-align:center; color:white">
               Statistics
         </h4>
@@ -113,12 +116,12 @@
   </div>
 
   <div class="col">
-    <div class = "twitter" style="text-align:center;" >
+    <div class = "twitter" style="text-align:center;" data-aos="fade-left">
       <a class="twitter-timeline" data-width="500" data-height="400" data-theme="dark" href="https://twitter.com/RockCanyonHS?ref_src=twsrc%5Etfw">Tweets by RockCanyonHS</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
   </div>
   </div>
-  <canvas id="mycanvas" style="width: 100vw; height: 500px" height="500px"></canvas>
+  <canvas data-aos="fade-up" id="mycanvas" style="width: 100vw; height: 500px" height="500px"></canvas>
   <script type="text/javascript">
     var canvas = document.getElementById('mycanvas');
     canvas.setAttribute('width', window.innerWidth);

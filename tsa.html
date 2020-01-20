@@ -9,9 +9,12 @@
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="main.css">
     <script type="text/javascript" src="main.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         $(document).ready(function(){
             $('[data-toggle="tooltip"]').tooltip();
+            AOS.init();
         });
     </script>
 
@@ -41,10 +44,10 @@
 
 
 <div style="position: relative; padding-top: 75px; text-align: center;">
-    <div class="pt-5 text-white">
+    <div class="pt-5 text-white" data-aos="fade-left">
         <h1>Rock Canyon's Career and Technical Education</h1>
     </div>
-    <div style="height: 300px">
+    <div style="height: 300px" data-aos="fade-right">
         <img data-toggle="tooltip" data-placement="bottom" class="avatar" alt="Avatar"
             title="Mr. Barker teaches engineering and computer science clases and helps manage clubs such as TSA" 
             src="https://rockcanyonjags.com/wp-content/uploads/2019/09/BARKER_KYLER-150x150.jpg"
@@ -63,19 +66,92 @@
         />
     </div>
 
-    <div style="padding-top: 15px; width: 100%;" class="row pt-5 text-white">
-        <div class="col">
-            <h3>1 of 3</h3>
+    <div style="padding-top: 15px; width: 100%; text-align: center;" class="pt-5 text-white">
+        <div style="width:50%; margin: auto;">
+            <div data-aos="fade-right">
+                <img width="150px" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Technology_Student_Association_Emblem.svg/1200px-Technology_Student_Association_Emblem.svg.png" />
+            </div>
+            <br>
+            <div data-aos="fade-left">
+                <h4>
+                    Rock Canyon has an outstanding TSA program, aided by an emphasis on computer, technology, and business classes. 
+                    Countless awards have been won at the state and national levels. Just last year, Rock Canyon had a team attend nationals
+                    in Washington, DC for Engineering Design.<br><br><br><br>
+                </h4>
+            </div>
         </div>
-        <div class="col">
-            <h3>2 of 3</h3>
+    </div>
+
+    <div style="padding-top: 35px; width: 100%; padding: 20px; height: 750px;" class="row pt-5 text-white">
+        <div class="col" data-aos="fade-right">
+            <h3>Business</h3>
+            <div style="height: 300px">
+                <img width="400px" src="https://c.pxhere.com/images/08/8f/d3b845da427417decd18d7e6887c-1448611.jpg!d">
+            </div>
+            <h5>
+                Rock Canyon High School participates in the High School of Business program, preparing students for the professional world.
+                Students gain invaluable leadership skills and business strategies. Students in the final High School of Business class even
+                create their own business and present their experience at the end.
+            </h5>
         </div>
-        <div class="col">
-            <h3>3 of 3</h3>
+        <div class="col" data-aos="fade-up">
+            <h3>Biotechnology</h3>
+            <div style="height: 300px">
+                <img width="400px" src="https://ewscripps.brightspotcdn.com/dims4/default/76b1550/2147483647/strip/true/crop/640x360+0+60/resize/1280x720!/quality/90/?url=http%3A%2F%2Fmedia.thedenverchannel.com%2Fphoto%2F2016%2F01%2F07%2FIMG_2532_1452227693488_29566199_ver1.0_640_480.JPG">
+            </div>
+            <h5>
+                Taught by Ms. Fordham and Ms. Petri, Rock Canyon's Biotechnology program gives students the toolset needed to pursue independent research,
+                as is done in the second year of Biotechnology. It also teaches high schoolers the science behind cutting-edge breakthroughs and technology
+                in the fields of technology, medicine, and biotechnology. Not only that, but students of the biotechnology program graduate with an experience
+                in lab equipment rivaling that of professionals.
+            </h5>
+        </div>
+        <div class="col" data-aos="fade-left">
+            <h3>Computer Science</h3>
+            <div style="height: 300px">
+                <img width="400px" src="https://c.pxhere.com/photos/af/15/background_code_coder_communication_computer_concept_css_css3-912807.jpg!d"">
+            </div>
+            <h5>
+                The Computer Science classes at Rock Canyon High School enable students' success in nearly any technical field. 
+                In the increasingly computerized world, computer science becomes all the more important.
+            </h5>
+        </div>
+    </div>
+
+    <div style="padding-top: 35px; width: 100%; padding: 20px;" class="row pt-5 text-white">
+        <div class="col" data-aos="fade-right">
+            <h3>RCTV</h3>
+            <div style="height: 300px">
+                <img width="400px" src="https://sites.google.com/a/dcsdk12.org/rctv-broadcast-network/_/rsrc/1472779641401/website-builder/RCTVSet.jpg">
+            </div>
+            <h5>
+                Rock Canyon High School has an award-winning school broadcast class, called RCTV (Rock Canyon Television). Students 
+                use their creativity, video-editing, and acting skills to produce a professional, and visually appealing production.
+            </h5>
+        </div>
+        <div class="col" data-aos="fade-up">
+            <h3>Fire Science</h3>
+            <div style="height: 300px">
+                <img width="400px" src="https://i.ytimg.com/vi/jbg0DyfUkec/maxresdefault.jpg">
+            </div>
+            <h5>
+                Rock Canyon High School poses a unique opportunity for those interested in firefighting: the Fire Science program. Students
+                learn how to deal with real fires and all of the equipment associated with it.
+            </h5>
+        </div>
+        <div class="col" data-aos="fade-left">
+            <h3>Engineering</h3>
+            <div style="height: 300px">
+                <img width="400px" src="https://media.defense.gov/2017/Aug/03/2001787583/780/780/0/170801-F-MZ237-044.JPG">
+            </div>
+            <h5>
+                Engineering classes teach students how to think critically and feel comfortable with the engineering process,
+                required for engineering-related careers.
+            </h5>
         </div>
     </div>
 
 </div>
-
+<br><br><br><br><br><br><br><br><br>
 </body>
 </html>
