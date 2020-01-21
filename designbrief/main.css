@@ -69,3 +69,13 @@ body {
 .navbar.active .navbar-brand {
     color: #555;
 }
+
+.cars {
+    padding: 50px;
+    width: 100vw;
+    margin: auto;
+}
+
+.row {
+    padding: 25px;
+}
