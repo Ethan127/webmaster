@@ -4,11 +4,21 @@
   <title>Volta</title>
 
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-  <script type="text/javascript" src="//code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="main.css">
-  <script type="text/javascript" src="n.js"></script><script>window.onload=otherNav();</script>  <!--Changes transparency of navbar on scroll-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <script type="text/javascript" src="n.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+        AOS.init();
+    });
+    window.onload=homeNav(); //Changes transparency of navbar on scroll
+  </script>
 
 </head>
 <body>
@@ -37,9 +47,24 @@
     <div class="pt-5 text-white">
         <h1 style="text-align: center;">About Us</h1>
         <br><br>
-        <h3>
-            Why we have the competitive advantage: Why would you choose Volta over our competitors? Volta’s cutting edge technology allows for better battery usage as well as faster acceleration. We also offer the best price on the market, with our prices being comparable to smaller gasoline cars. Also at Volta, we only hire salespeople who will get you the best bang for your buck as well as someone you can trust. When you come to Vulta, we’ll give you an experience you wont forget. From our friendly front desk receptionist to our top of the line salesmen. Also when you arrive at Volta facilities, you can enjoy yourself to complimentary snacks and drinks as provided in our food court. 
-        </h3>
+        <div>
+        <div data-aos="fade-right">
+            <h3>Who are we?</h3>
+            Volta is an electric car company founded by Siddharth Srikanth, Patrick Dobranowski, Ethan Schnatherhorst, Esvaran Selvaganapathy, and Mitchell Kubina. We are inspired by Alessandro Volta, who invented the electric battery and is the pioneer of electricity and power. Our mission is to provide cars that are both environmentally sustainable and enjoyable for the public to enjoy.
+        </div>
+            <br><br><br>
+        <div data-aos="fade-in">
+            <h3>Why go electric?</h3>
+            Electric cars have been proven to reduce greenhouses gases and air pollutants over the entire course of the vehicle compared to other cars that run on petrol or diesel. Our cars are also economically cheaper to maintain, as you will save up to six times on what is paid for average annual gas prices for a car. From less noise pollution, easier maintenance and economic efficiency, Volta's electric cars are what is best!
+            <br><br><br>
+        </div>
+        <div data-aos="fade-left">
+            <h3>Why would you choose Volta over our competitors?</h3> Volta’s cutting edge technology allows for better battery usage as well as faster acceleration. 
+            We also offer the best price on the market, with our prices being comparable to smaller gasoline cars. Also at Volta, we only hire salespeople who will get you the best bang for your buck as well as 
+            someone you can trust. When you come to Vulta, we’ll give you an experience you wont forget. From our friendly front desk receptionist to our top of the line salesmen. Also when you arrive at Volta facilities, 
+            you can enjoy yourself to complimentary snacks and drinks as provided in our food court. 
+        </div>
+        </p>
     </div>
 </div>
 
