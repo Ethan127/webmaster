@@ -18,6 +18,7 @@
     });
     window.onload=homeNav(); //Changes transparency of navbar on scroll
   </script>
+  <link rel="stylesheet" type="text/css" href="circle.css">
 
 </head>
 <body>
@@ -122,63 +123,49 @@
     </div>
   </div>
   </div>
-  <canvas data-aos="fade-up" id="mycanvas" style="width: 100vw; height: 500px" height="500px"></canvas>
-  <script type="text/javascript">
-    var canvas = document.getElementById('mycanvas');
-    canvas.setAttribute('width', window.innerWidth);
-    var ctx = canvas.getContext('2d');
-    ctx.beginPath();
-    ctx.arc(250, 200, 150, -Math.PI/2, 2*Math.PI * 99/100 - Math.PI/2, false);
-    ctx.lineWidth = 10;
-    ctx.strokeStyle = "white"
-    ctx.stroke();
-    
-    ctx.font = "100px Arial";
-    ctx.fillStyle = "white";
-    ctx.fillText("99%", 162.5, 235);
-    
-    
-    ctx.font = "27.5px Arial";
-    ctx.fillText("Of Students Graduate RCHS", 75, 400);
 
+  <div data-aos="fade-up" class="row" style="width: 100vw; margin: auto; text-align: center;">
+    
+    <div class="col">
+      <div class="progress blue">
+          <span class="progress-left">
+              <span class="progress-bar"></span>
+          </span>
+          <span class="progress-right">
+              <span class="progress-bar"></span>
+          </span>
+          <div class="progress-value">99% <br> Graduation Rate</div>
+      </div>
+    </div>
 
+    <div class="col">
+      <div class="progress yellow">
+          <span class="progress-left">
+              <span class="progress-bar"></span>
+          </span>
+          <span class="progress-right">
+              <span class="progress-bar"></span>
+          </span>
+          <div class="progress-value">85% <br> Pursue College</div>
+      </div>
+    </div>
 
+    <div class="col">
+      <div class="progress green">
+          <span class="progress-left">
+              <span class="progress-bar"></span>
+          </span>
+          <span class="progress-right">
+              <span class="progress-bar"></span>
+          </span>
+          <div class="progress-value">76% <br> AP Enrollment</div>
+      </div>
+    </div>
 
+  </div>
+  <br>
 
-    ctx.beginPath();
-    ctx.arc(800, 200, 150, -Math.PI/2, 2*Math.PI * 72/100 - Math.PI/2, false);
-    ctx.lineWidth = 10;
-    ctx.strokeStyle = "white"
-    ctx.stroke();
-    
-    ctx.font = "100px Arial";
-    ctx.fillStyle = "white";
-    ctx.fillText("72%", 690, 235);
-    
-    
-    ctx.font = "27.5px Arial";
-    ctx.fillText("AP Enrollment", 700, 400);
-
-
-
-
-    ctx.beginPath();
-    ctx.arc(1350, 200, 150, -Math.PI/2, 2*Math.PI * 85/100 - Math.PI/2, false);
-    ctx.lineWidth = 10;
-    ctx.strokeStyle = "white"
-    ctx.stroke();
-    
-    ctx.font = "100px Arial";
-    ctx.fillStyle = "white";
-    ctx.fillText("85%", 1252.5, 235);
-    
-    
-    ctx.font = "27.5px Arial";
-    ctx.fillText("Of Graduates Pursue College", 1175, 400);
-    
-    
-    
-  </script>
+  
 </div>
 
 
