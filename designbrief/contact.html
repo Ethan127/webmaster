@@ -1,0 +1,112 @@
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Volta</title>
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <script type="text/javascript" src="//code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/css/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script type="text/javascript" src="n.js"></script><script>window.onload=otherNav();</script>  <!--Changes transparency of navbar on scroll-->
+
+</head>
+<body>
+
+<header class="header">
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container"><a href="index.html" class="navbar-brand text-uppercase font-weight-bold"><img class="logo" src="../assets/logo.png" height="60px"></a>
+            
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+            
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link font-weight-bold">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link font-weight-bold">About Us</a></li>
+                    <li class="nav-item"><a href="cars.html" class="nav-link font-weight-bold">Cars</a></li>
+                    <li class="nav-item active"><a href="contact.html" class="nav-link font-weight-bold">Contact</a></li>
+                    <li class="nav-item"><a href="../index.html" class="nav-link font-weight-bold">Main Website</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+
+<div style="padding: 100px; padding-top: 100px;">
+<section class="mb-4 pt-5 text-white">
+
+    <h2 class="pt-5 text-white text-center">Contact us</h2><br><br>
+
+    <div class="row">
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Your name</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Your email</label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Subject</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Your message</label>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>Highlands Ranch, CO 80129, USA</p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>+1 303-555-5555</p>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>contact@volta.com</p>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="text-center pt-5 text-white">
+        <a class="btn btn-primary">Send</a>
+    </div>
+
+</section>
+</div>
+
+</body>
+</html>
