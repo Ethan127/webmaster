@@ -22,4 +22,4 @@ var otherNav=function(){
     });
 }
 
-var name = "name";
+var name = "Gomperta";

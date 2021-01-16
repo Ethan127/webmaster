@@ -1,7 +1,7 @@
 <html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <title>Volta</title>
+  <title id="title">Volta</title>
 
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -16,6 +16,7 @@
     $(document).ready(function(){
         $('[data-toggle="tooltip"]').tooltip();
         AOS.init();
+        document.getElementById("title").innerHTML = name;
     });
     window.onload=otherNav(); //Changes transparency of navbar on scroll
   </script>
