@@ -21,3 +21,5 @@ var otherNav=function(){
         });
     });
 }
+
+var name = "name";
