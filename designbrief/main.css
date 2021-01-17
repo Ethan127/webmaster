@@ -11,6 +11,14 @@ body {
     background-position: center;
 }
 
+.honeycome {
+    margin: 0;
+    background-image: url("../assets/hexb.png");
+    background-repeat: repeat;
+    image-resolution: 400dpi;
+    background-size: 150px;
+}
+
 .imageHeader {
     display: block;
     background-image: url("https://sites.google.com/site/kylerrbarker/home/me.jpg");
