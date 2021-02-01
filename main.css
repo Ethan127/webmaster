@@ -34,7 +34,7 @@ body {
 .navcontainer {
     position: absolute;
     margin: 20px;
-    width: auto;
+    width: calc(100% - (100vw - 100%));
 }
 
 
