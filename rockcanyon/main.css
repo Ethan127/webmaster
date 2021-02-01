@@ -4,31 +4,11 @@
 
 body {
     min-height: 110vh;
-    background-color: #0082c8;
-    background-image: linear-gradient(135deg, #36d1dc 0%, #5b86e5 100%);
+    background-color: #000000;
+    background-image: linear-gradient(135deg, #000000 0%, #ffd700 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-}
-
-.honeycome {
-    margin: 0;
-    background-image: url("../assets/hexb.png");
-    background-repeat: repeat;
-    image-resolution: 400dpi;
-    background-size: 150px;
-}
-
-.imageHeader {
-    display: block;
-    background-image: url("https://sites.google.com/site/kylerrbarker/home/me.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    background-attachment: fixed;
-    width: 100%;
-    height: calc(100vh);
 }
 
 .navcontainer {
@@ -49,7 +29,7 @@ body {
 
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
-    color: rgba(255, 255, 255, 0.623);
+    color: #fff;
     text-decoration: none;
 }
 
@@ -60,32 +40,52 @@ body {
 
 /* Change navbar styling on scroll */
 .navbar.active {
-    background: #fff;
+    background: rgba(17,17,17,0.8);
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar.active .nav-link {
-    color: #555;
+    color: rgba(153, 153, 153, );
 }
 
 .navbar.active .nav-link:hover,
 .navbar.active .nav-link:focus {
-    color: #555;
+    color: #999;
     text-decoration: none;
 }
 
 .navbar.active .navbar-brand {
-    color: #555;
+    color: #999;
 }
 
-.cars {
-    padding: 50px;
-    width: 100vw;
-    margin: auto;
+html {
+    scroll-behavior: smooth;
 }
 
-.row {
-    padding: 25px;
+.arrows {
+    font-size:60px;
+    color:grey;
+    padding: 60px;
+    opacity: 0.5;
+}
+
+.arrows:hover {
+    transition: 0.5s;
+    opacity: 0.8;
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 15px;
+    transition: 0.25s;
+}
+
+.avatar:hover {
+    width: 220px;
+    height: 220px;
+    transition: 0.25s;
 }
 
 .vertical-center {

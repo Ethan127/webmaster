@@ -1,7 +1,7 @@
 <html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <title>Rock Canyon</title>
+  <title id="title">name</title>
 
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -13,6 +13,13 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+        AOS.init();
+        document.getElementById("title").innerHTML = name;
+        document.getElementById("nav").innerHTML = navbar;
+        document.getElementById("aboutl").classList.add("active");
+    });
     window.onload=otherNav(); //Changes transparency of navbar on scroll
   </script>
 
@@ -20,50 +27,39 @@
 <body>
 
 <header class="header">
-    <nav class="navbar active navbar-expand-lg fixed-top">
-        <a href="index.html"><img class="logo" src="https://rockcanyonjags.com/wp-content/uploads/2018/06/Rock-CanyonLogosLiveTypeC_School-Crestv6-200x190.png" height="80px" width="80px"></a> <a href="index.html" class="navbar-brand text-uppercase font-weight-bold">Rock Canyon</a>
-        <div class="container">
-            
-            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
-            
-            <div id="navbarSupportedContent" class="collapse navbar-collapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="tsa.html" class="nav-link">CTE</a></li>
-                    <li class="nav-item"><a href="tsa2.html" class="nav-link">TSA</a></li>
-                    <li class="nav-item active"><a href="about.html" class="nav-link font-weight-bold">About</a></li>
-                    <li class="nav-item"><a href="designbrief/index.html" class="nav-link">Design Brief</a></li>
-                </ul>
-            </div>
-
-        </div>
-    </nav>
+    <div id="nav"></div>
 </header>
 
-
-<div class="container" style="position: relative; padding-top: 75px; text-align: center;">
+<div class="container" style="padding-top: 50px;">
     <div class="pt-5 text-white">
-        <h1>About</h1>
-        <br><br><br><br>
-        <p>
-            This website was built with the aid of Bootstrap and JQuery, and some animations were added using AOS (Animate on Scroll). All of these libraries are free and open-source.
-             Images, videos, and icons used are in the public domain, labeled for reuse. Of course, the images of our car models are of existing cars,
-             but we used sources that allow reuse for free. We do not claim to own any images that we used.
-        </p>
+        <h1 style="text-align: center;">About Us</h1>
         <br><br>
-        <h4>Images from Internet Used:</h4>
-        <div style="text-align: left;">
-        <ul>
-            <li>https://www.fool.com/investing/2020/01/15/sony-teases-a-big-expansion-into-electric-vehicles.aspx</li>
-            <li>https://www.thesprucecrafts.com/fleece-tie-blanket-1252959</li>
-            <li>https://www.pexels.com/search/car/</li>
-            <li>https://commons.wikimedia.org/wiki/File:ScrewAttack_blue_bolt.png</li>
-        </ul>
+        <div>
+        <div data-aos="fade-right">
+            <h3>Who Are We?</h3>
+            Gomperta is a medical telecommunications company founded by Ethan Schnathorst, Siddharth Srikanth, Patrick Dobranowski, Kevin Chen, and Justin Sheu. We are inspired to help those who need it most during this unfortunate time during a pandemic and have set out to bringing medicine and health services, in a cost-efficient and safe way, to everyone around the world.
         </div>
+            <br><br><br>
+        <div data-aos="fade-in">
+            <div style="text-align: center;"">
+                <img style="text-align: center; height: 150px" src="https://upload.wikimedia.org/wikipedia/commons/d/d7/ScrewAttack_blue_bolt.png" />
+            </div>
+            <h3>Why Go Electric?</h3>
+            Electric cars have been proven to reduce greenhouses gases and air pollutants over the entire course of the vehicle compared to other cars that run on petrol or diesel. Our cars are also economically cheaper to maintain, as you will save up to six times on what is paid for average annual gas prices for a car. From less noise pollution, easier maintenance and economic efficiency, Volta's electric cars are what is best!
+            <br><br><br>
+            <div style="text-align: center;">
+                <img style="text-align: center; height: 150px" src="https://upload.wikimedia.org/wikipedia/commons/d/d7/ScrewAttack_blue_bolt.png" />
+            </div>
+        </div>
+        <div data-aos="fade-left">
+            <h3>What's the Advantage of Volta, Specifically?</h3> Volta’s cutting edge technology allows for better battery usage as well as faster acceleration. 
+            We also offer the best price on the market, with our prices being comparable to smaller gasoline cars. Also at Volta, we only hire salespeople who will get you the best bang for your buck as well as 
+            someone you can trust. When you come to Vulta, we’ll give you an experience you wont forget. From our friendly front desk receptionist to our top of the line salesmen. Also when you arrive at Volta facilities, 
+            you can enjoy yourself to complimentary snacks and drinks as provided in our food court. 
+        </div>
+        </p>
     </div>
 </div>
-
-
 
 </body>
 </html>
