@@ -153,10 +153,17 @@ ul.aboutUsBody li.aboutUsBody {
 
 /* Desktop View */
 @media (min-width: 992px) {
-
+    .lg-4 {
+        
+    }
 }
 
 /* Tablet View */
 @media (min-width: 768px) and (max-width: 991px) {
     
-    
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+
+}
