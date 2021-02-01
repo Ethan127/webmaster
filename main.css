@@ -57,6 +57,12 @@ body {
     color: #fff;
 }
 
+.image{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
 .rectangle {
     height: 50%;
     width: 75%;
@@ -144,3 +150,13 @@ ul.aboutUsBody li.aboutUsBody {
     list-style-type:circle;
     margin-bottom: 5px;
 }
+
+/* Desktop View */
+@media (min-width: 992px) {
+
+}
+
+/* Tablet View */
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    
