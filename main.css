@@ -111,7 +111,7 @@ body {
     transform: translateY(-50%);
   }
 
-.aboutHeading {
+  .aboutHeading {
     margin-top: 90px;
     background-color: #3e97c7;
     box-shadow: 0px 10px 40px #0082c8;
@@ -121,19 +121,6 @@ h1.aboutHeading {
     color: white;
     text-align: center;
     box-shadow: 0px 0px;
-}
-
-#aboutHeadingImage {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-height: 600px;
-}
-
-div.aboutUsBody {
-    margin-top: 50px;
-    background-color: white;
-    padding: 30px 400px 30px 400px;
 }
 
 h1.aboutUsBody {
@@ -153,17 +140,48 @@ ul.aboutUsBody li.aboutUsBody {
 
 /* Desktop View */
 @media (min-width: 992px) {
-    .lg-4 {
-        
+    #aboutHeadingImage {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 600px;
+    }
+
+    div.aboutUsBody {
+        margin-top: 50px;
+        background-color: white;
+        padding: 30px 200px 30px 200px;
     }
 }
 
 /* Tablet View */
 @media (min-width: 768px) and (max-width: 991px) {
-    
+    #aboutHeadingImage {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 400px;
+    }
+
+    div.aboutUsBody {
+        margin-top: 50px;
+        background-color: white;
+        padding: 30px 100px 30px 100px;
+    }
 }
 
 /* Mobile View */
 @media (max-width: 767px) {
+    #aboutHeadingImage {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 200px;
+    }
 
+    div.aboutUsBody {
+        margin-top: 50px;
+        background-color: white;
+        padding: 30px 50px 30px 50px;
+    }
 }
