@@ -31,14 +31,12 @@ var parallaxEffect=function(){
                 var height = $(this).height()
                 var endY  = initY + $(this).height()
 
-                // Check if the element is in the viewport.
                 var visible = isInViewport(this)
                 if(visible) {
                 var diff = scrolled - initY
                 var ratio = Math.round((diff))
                 $(this).css('background-position','center ' + parseInt(ratio * 0.5) + 'px')
                 }
-                // $(".test").html("%")
             })
         })
     })
