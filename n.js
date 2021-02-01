@@ -22,6 +22,40 @@ var otherNav=function(){
     });
 }
 
+var parallaxEffect=function(){
+    $(function() {
+        $(window).scroll(function() {
+            var scrolled = $(window).scrollTop()
+            $('.parallax').each(function(index, element) {
+                var initY = $(this).offset().top
+                var height = $(this).height()
+                var endY  = initY + $(this).height()
+
+                // Check if the element is in the viewport.
+                var visible = isInViewport(this)
+                if(visible) {
+                var diff = scrolled - initY
+                var ratio = Math.round((diff))
+                $(this).css('background-position','center ' + parseInt(ratio * 0.5) + 'px')
+                }
+                // $(".test").html("%")
+            })
+        })
+    })
+}
+
+function isInViewport(node) {
+    var rect = node.getBoundingClientRect()
+    return (
+      (rect.height > 0 || rect.width > 0) &&
+      rect.bottom >= 0 &&
+      rect.right >= 0 &&
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.left <= (window.innerWidth || document.documentElement.clientWidth)
+    )
+  }
+  
+
 var name = "Gomperta";
 
 var navbar = `
@@ -36,7 +70,7 @@ var navbar = `
                 <li id="aboutl" class="nav-item"><a href="about.html" class="nav-link font-weight-bold">About Us</a></li>
                 <li id="servicesl" class="nav-item"><a href="services.html" class="nav-link font-weight-bold">Services</a></li>
                 <li id="contactl" class="nav-item"><a href="contact.html" class="nav-link font-weight-bold">Contact</a></li>
-                <li id="mainl" class="nav-item"><a href="../index.html" class="nav-link font-weight-bold">Main Website</a></li>
+                <li id="mainl" class="nav-item"><a href="rockcanyon/index.html" class="nav-link font-weight-bold">Main Website</a></li>
             </ul>
         </div>
 
