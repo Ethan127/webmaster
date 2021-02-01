@@ -1,36 +1,38 @@
 <html>
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <title id="title">Volta</title>
-
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="main.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-  <script type="text/javascript" src="n.js"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();
-        AOS.init();
-        document.getElementById("title").innerHTML = name;
-        document.getElementById("nav").innerHTML = navbar;
-        document.getElementById("servicesl").classList.add("active");
-    });
-    window.onload=otherNav(); //Changes transparency of navbar on scroll
-  </script>
-
-</head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title id="title">Volta</title>
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <script type="text/javascript" src="n.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+            AOS.init();
+            document.getElementById("title").innerHTML = name;
+            document.getElementById("nav").innerHTML = navbar;
+            document.getElementById("servicesl").classList.add("active");
+        });
+        window.onload=otherNav(); //Changes transparency of navbar on scroll
+        window.onload=parallaxEffect();
+    </script>
+    
+    </head>
 <body>
 
+<div class="honeycome parallax">
 <header class="header">
     <div id="nav"></div>
 </header>
 
-<div class="container" style="padding-top: 50px;">
+<div style="padding-top: 50px;">
     <div class="pt-5 text-white">
         <h1 style="text-align: center;">Car Models</h1>
         <br><br>
@@ -38,116 +40,86 @@
     </div>
 </div>
 
-<div class="cars">
+<div class="memberships">
+    
+    <div class="card-deck" style="text-align: center;">
 
-<div class="row" data-aos="fade-up">
-<div class="col">
-    <div class="card" style="width: 18rem; margin: auto">
-        <img class="card-img-top" src="https://images.pexels.com/photos/707046/pexels-photo-707046.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Peregrini</h5>
-            <p class="card-text">
-                Distance per charge: 208 mi<br>
-                Torque: 401 lb⋅ft<br>
-                0-60 mph: 6.2 s<br>
-                Top speed: 172 mph<br>
-            </p>
-            <div style="text-align: center;">
-                <a href="contact.html" class="btn btn-primary">Buy Now</a>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="col">
-    <div class="card" style="width: 18rem; margin: auto">
-        <img class="card-img-top" src="https://images.pexels.com/photos/627678/pexels-photo-627678.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Zanino</h5>
-            <p class="card-text">
-                Distance per charge: 301 mi<br>
-                Torque: 362 lb⋅ft<br>
-                0-60 mph: 3.2 s<br>
-                Top speed: 221 mph<br>
-            </p>
-            <div style="text-align: center;">
-                <a href="contact.html" class="btn btn-primary">Buy Now</a>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="col">
-    <div class="card" style="width: 18rem; margin: auto">
-        <img class="card-img-top" src="https://images.pexels.com/photos/1007410/pexels-photo-1007410.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Flaminio</h5>
-            <p class="card-text">
-                Distance per charge: 310 mi<br>
-                Torque: 357 lb⋅ft<br>
-                0-60 mph: 3.1 s<br>
-                Top speed: 220 mph<br>
-            </p>
-            <div style="text-align: center;">
-                <a href="contact.html" class="btn btn-primary">Buy Now</a>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
+        <div class="card border-light mb-3">
+            <div class="card-header" style="font-size:large;"><b>Free</b></div>
+          <div class="card-body">
+            <h5 class="card-title">Free membership <br><br><b>FREE</b></h5>
 
-<div class="row" data-aos="fade-up">
-    <div class="col">
-        <div class="card" style="width: 18rem; margin: auto">
-            <img class="card-img-top" src="https://images.pexels.com/photos/1383834/pexels-photo-1383834.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Lombardy</h5>
-                <p class="card-text">
-                    Distance per charge: 402 mi<br>
-                    Torque: 502 lb⋅ft<br>
-                    0-60 mph: 7.1 s<br>
-                    Top speed: 121 mph<br>
-                </p>
-                <div style="text-align: center;">
-                    <a href="contact.html" class="btn btn-primary">Buy Now</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col">
-        <div class="card" style="width: 18rem; margin: auto">
-            <img class="card-img-top" src="https://images.pexels.com/photos/88630/pexels-photo-88630.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Ludovico</h5>
-                <p class="card-text">
-                    Distance per charge: 417 mi<br>
-                    Torque: 408 lb⋅ft<br>
-                    0-60 mph: 6.4 s<br>
-                    Top speed: 134 mph<br>
-                </p>
-                <div style="text-align: center;">
-                    <a href="contact.html" class="btn btn-primary">Buy Now</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col">
-        <div class="card" style="width: 18rem; margin: auto">
-            <img class="card-img-top" src="https://images.pexels.com/photos/947031/pexels-photo-947031.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Giovanni</h5>
-                <p class="card-text">
-                    Distance per charge: 219 mi<br>
-                    Torque: 312 lb⋅ft<br>
-                    0-60 mph: 2.3 s<br>
-                    Top speed: 241 mph<br>
-                </p>
-                <div style="text-align: center;">
-                    <a href="contact.html" class="btn btn-primary">Buy Now</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+            <p class="card-text">
+                Waiting Rooms ✔<br>
+                Email Support ✔<br>
+                Online Help Pages ✔<br>
+                End-to-end encryption ✔<br>
+                Unlimited Video Calls ❌<br>
+                On-Demand Chat Support ❌<br>
+                24/7 Access ❌<br>
+                Personalized Plans ❌<br>
+                Shared Rooms ❌<br>
+                HD Video Calls ❌<br>
+            </p>
 
+            <div style="text-align: center;">
+                <a href="contact.html" class="btn btn-primary">Start Now</a>
+            </div>
+            
+          </div>
+        </div>
+        <div class="card border-secondary mb-3">
+            <div class="card-header" style="color:gray; font-size:large;"><b>Regular</b></div>
+          <div class="card-body">
+            <h5 class="card-title">Regular membership <br><br><b>$9.99/mo.</b></h5>
+            
+            <p class="card-text">
+                Waiting Rooms ✔<br>
+                Email Support ✔<br>
+                Online Help Pages ✔<br>
+                End-to-end encryption ✔<br>
+                Unlimited Video Calls ✔<br>
+                On-Demand Chat Support ✔<br>
+                24/7 Access ✔<br>
+                Personalized Plans ❌<br>
+                Shared Rooms ❌<br>
+                HD Video Calls ❌<br>
+            </p>
+            
+
+            <div style="text-align: center;">
+                <a href="contact.html" class="btn btn-primary">Upgrade Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="card border-info mb-3">
+            <div class="card-header" style="color: aqua; font-size:large;"><b>Premium</b></div>
+          <div class="card-body">
+            <h5 class="card-title">Premium membership <br><br><b>$19.99/mo.</b></h5>
+            
+            <p class="card-text">
+                Waiting Rooms ✔<br>
+                Email Support ✔<br>
+                Online Help Pages ✔<br>
+                End-to-end encryption ✔<br>
+                Unlimited Video Calls ✔<br>
+                On-Demand Chat Support ✔<br>
+                24/7 Access ✔<br>
+                Personalized Plans ✔<br>
+                Shared Rooms ✔<br>
+                HD Video Calls ✔<br>
+            </p>
+            
+
+            <div style="text-align: center;">
+                <a href="contact.html" class="btn btn-primary">Upgrade Now</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      
 </div>
 
 </body>

@@ -1,60 +1,36 @@
 <html>
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <title id="title">Volta</title>
-  
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="main.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-  <script type="text/javascript" src="n.js"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();
-        AOS.init();
-        document.getElementById("title").innerHTML = name;
-        document.getElementById("nav").innerHTML = navbar;
-        document.getElementById("sourcesl").classList.add("active");
-    });
-    window.onload=homeNav(); //Changes transparency of navbar on scroll
-    window.onload=parallaxEffect();
-  </script>
-  
-</head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title id="title">Volta</title>
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <script type="text/javascript" src="n.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+            AOS.init();
+            document.getElementById("title").innerHTML = name;
+            document.getElementById("nav").innerHTML = navbar;
+            document.getElementById("sourcesl").classList.add("active");
+        });
+        window.onload=otherNav(); //Changes transparency of navbar on scroll
+        window.onload=parallaxEffect();
+    </script>
+    
+    </head>
 <body>
 
-<style>
-    .navbar .nav-link {
-        color: #333;
-    }
-
-    .navbar .nav-link:hover,
-    .navbar .nav-link:focus {
-        color: #333;
-        text-decoration: none;
-    }
-
-    .navbar .navbar-brand {
-        color: #333;
-    }
-</style>
 
 <div class="honeycome parallax">
 <header class="header">
-    <div class="imageHeader">
-    <div class="navcontainer">
     <div id="nav"></div>
-    <div style="width: 100%; text-align: center; position: absolute; top: 30vh;">
-        <h1 class="pt-5 text-white">Join the Revolution</h1><br>
-        <button type="button" onclick="location.href='./cars.html'" class="btn btn-primary buybutton">View Models</button><br><br>
-        <button type="button" onclick="location.href='./about.html'" class="btn btn-info buybutton">Learn More</button>
-    </div> 
-    </div>
-    </div>
 </header>
 
 <div class="container honeycomb">
