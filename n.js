@@ -58,7 +58,7 @@ var name = "Gomperta";
 
 var navbar = `
 <nav id="nav" class="navbar navbar-expand-lg fixed-top">
-    <div class="container"><a href="index.html" class="navbar-brand text-uppercase font-weight-bold"><img class="logo" src="../assets/logo.png" height="60px"></a>
+    <div class="container"><a href="index.html" class="navbar-brand text-uppercase font-weight-bold"><img class="logo" src="assets/logo.png" height="60px"></a>
         
         <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
         
