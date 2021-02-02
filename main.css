@@ -68,7 +68,7 @@ body {
 
 .navbar.active .nav-link:hover,
 .navbar.active .nav-link:focus {
-    color: #555;
+    color: rgb(136, 136, 136);
     text-decoration: none;
 }
 
