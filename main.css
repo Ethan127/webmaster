@@ -63,15 +63,6 @@ body {
     vertical-align: middle;
 }
 
-.rectangle {
-    height: 50%;
-    width: 75%;
-    margin: auto;
-    position: absolute;
-    background-color: #555;
-    opacity: 0.5;
-    z-index: 0;
-}
 
 /* Change navbar styling on scroll */
 .navbar.active {
