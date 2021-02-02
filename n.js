@@ -1,4 +1,5 @@
-var homeNav=function(){
+//Old design where the navbar is invisible but becomes white on scroll. Hard to read text.
+/*var homeNav=function(){
     $(function () {
         $(window).on('scroll', function () {
             if ( $(window).scrollTop() > window.innerHeight - 20 ) {
@@ -19,6 +20,17 @@ var otherNav=function(){
                 $('.navbar').removeClass('active');
             }
         });
+    });
+}*/
+
+var homeNav=function(){
+    $(function () {
+        $('.navbar').addClass('active');
+    });
+}
+var otherNav=function(){
+    $(function () {
+        $('.navbar').addClass('active');
     });
 }
 
@@ -69,6 +81,7 @@ var navbar = `
                 <li id="servicesl" class="nav-item"><a href="services.html" class="nav-link font-weight-bold">Pricing</a></li>
                 <li id="contactl" class="nav-item"><a href="contact.html" class="nav-link font-weight-bold">Contact</a></li>
                 <li id="sourcesl" class="nav-item"><a href="sources.html" class="nav-link font-weight-bold">Sources</a></li>
+                <li id="docl" class="nav-item"><a href="doc.html" class="nav-link font-weight-bold">Documentation</a></li>
                 <!--<li id="mainl" class="nav-item"><a href="rockcanyon/index.html" class="nav-link font-weight-bold">Main Website</a></li>-->
             </ul>
         </div>

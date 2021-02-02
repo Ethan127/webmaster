@@ -1,4 +1,4 @@
-````````````````<html>
+<html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <title id="title">Volta</title>
@@ -19,6 +19,7 @@
         AOS.init();
         document.getElementById("title").innerHTML = name;
         document.getElementById("nav").innerHTML = navbar;
+        window.onload=parallaxEffect();
         document.getElementById("contactl").classList.add("active");
     });
     window.onload=otherNav(); //Changes transparency of navbar on scroll
@@ -27,6 +28,8 @@
 </head>
 <body>
 
+<div class="honeycome parallax">
+<div class="container" style="overflow-x: hidden">
 <header class="header">
     <div id="nav"></div>
 </header>

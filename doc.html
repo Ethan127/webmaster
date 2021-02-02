@@ -1,0 +1,47 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title id="title">Volta</title>
+    <link rel="icon" href="assets/logo.png">
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <script type="text/javascript" src="n.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+            AOS.init();
+            document.getElementById("title").innerHTML = name;
+            document.getElementById("nav").innerHTML = navbar;
+            document.getElementById("docl").classList.add("active");
+        });
+        window.onload=otherNav(); //Changes transparency of navbar on scroll
+        window.onload=parallaxEffect();
+    </script>
+    
+    </head>
+<body>
+
+
+<div class="honeycome parallax">
+<header class="header">
+    <div id="nav"></div>
+</header>
+
+<div class="container honeycomb" style="height: 110vh; overflow-x: hidden">
+    <div class="pt-5 text-white">
+        <div class="py-5" style="text-align: center;">
+            <a href="documentation/copyright_checklist.pdf">Copyright Checklist</a>
+        </div>
+    </div>
+</div>
+</div>
+
+</body>
+</html>
