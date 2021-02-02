@@ -11,7 +11,7 @@ body {
     background-position: center;
 }
 
-.honeycome {
+.honeycomb {
     margin: 0;
     background-image: url("assets/hexb.png");
     background-repeat: repeat;
@@ -202,5 +202,12 @@ ul.aboutUsBody li.aboutUsBody {
     }
     h5 {
         font-size: 100px;
+    }
+    .honeycomb {
+        margin: 0;
+        background-image: url("assets/hexb.png");
+        background-repeat: repeat;
+        image-resolution: 400dpi;
+        background-size: 400px;
     }
 }
