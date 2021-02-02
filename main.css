@@ -200,4 +200,7 @@ ul.aboutUsBody li.aboutUsBody {
         margin-right: auto;
         max-height: 200px;
     }
+    h5 {
+        font-size: 100px;
+    }
 }
