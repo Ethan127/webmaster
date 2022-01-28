@@ -4,23 +4,32 @@
 
 body {
     min-height: 110vh;
-    background-color: #0082c8;
-    background-image: linear-gradient(135deg, #36d1dc 0%, #5b86e5 100%);
+    /*background-color: #0082c8;
+    background-image: linear-gradient(135deg, #36d1dc 0%, #5b86e5 100%);*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
 }
 
+.section {
+    height: 300px;
+    width: 1000px;
+    background-color: #555;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+
 .imageHeader {
     display: block;
-    background-image: url("https://images.pexels.com/photos/4031818/pexels-photo-4031818.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-image: url("https://images.pexels.com/photos/7516353/pexels-photo-7516353.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     background-attachment: fixed;
     width: 100%;
-    height: calc(100vh);
+    height: calc(65vh);
 }
 
 .navcontainer {

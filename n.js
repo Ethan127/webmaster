@@ -64,9 +64,7 @@ function isInViewport(node) {
       rect.left <= (window.innerWidth || document.documentElement.clientWidth)
     )
   }
-  
 
-var name = "Gomperta";
 
 var navbar = `
 <nav id="nav" class="navbar navbar-expand-lg fixed-top">
@@ -78,6 +76,7 @@ var navbar = `
             <ul class="navbar-nav ml-auto">
                 <li id="homel" class="nav-item"><a href="index.html" class="nav-link font-weight-bold">Home</a></li>
                 <li id="aboutl" class="nav-item"><a href="about.html" class="nav-link font-weight-bold">About Us</a></li>
+                <li id="schedulel" class="nav-item"><a href="schedule.html" class="nav-link font-weight-bold">Schedule</a></li>
                 <li id="servicesl" class="nav-item"><a href="services.html" class="nav-link font-weight-bold">Pricing</a></li>
                 <li id="contactl" class="nav-item"><a href="contact.html" class="nav-link font-weight-bold">Contact</a></li>
                 <li id="sourcesl" class="nav-item"><a href="sources.html" class="nav-link font-weight-bold">Sources</a></li>

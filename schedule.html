@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title id="title">Volta</title>
+    <link rel="icon" href="assets/logo.png">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <script type="text/javascript" src="n.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+            AOS.init();
+            document.getElementById("title").innerHTML = name;
+            document.getElementById("nav").innerHTML = navbar;
+            document.getElementById("servicesl").classList.add("active");
+        });
+        window.onload = otherNav(); //Changes transparency of navbar on scroll
+        window.onload = parallaxEffect();
+    </script>
+    <style>
+        .scheduleHeader {
+            border-radius: 25px;
+            border-width: 3px;
+            margin: 25px;
+            width: 90%;
+            border-left: 10%;
+            background-color: greenyellow;
+            border-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="height: 110vh">
+        <header class="header">
+            <div id="nav"></div>
+        </header>
+    </div>
+    <div class="container" style="width:80%;">
+
+
+    </div>
+    <div class="container" style="width:80%;padding-top: 110vh;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">June 1<span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">June 2</a>
+                    <a class="nav-item nav-link" href="#">JUne 3</a>
+                    <a class="nav-item nav-link" href="#">June 4</a>
+                    <a class="nav-item nav-link" href="#">JUne 5</a>
+                    <a class="nav-item nav-link" href="#">June 6</a>
+                    <a class="nav-item nav-link" href="#">JUne 7</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</body>
+
+</html>
