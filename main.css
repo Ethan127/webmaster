@@ -4,8 +4,8 @@
 
 body {
     min-height: 110vh;
-    /*background-color: #0082c8;
-    background-image: linear-gradient(135deg, #36d1dc 0%, #5b86e5 100%);*/
+    background-color: #EAE7DC;
+    /*background-image: linear-gradient(135deg, #36d1dc 0%, #5b86e5 100%);*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -22,7 +22,6 @@ body {
 
 .imageHeader {
     display: block;
-    background-image: url("https://images.pexels.com/photos/7516353/pexels-photo-7516353.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -67,22 +66,24 @@ body {
 
 /* Change navbar styling on scroll */
 .navbar.active {
-    background: #fff;
+    background: #D8C3A5;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar.active .nav-link {
-    color: #555;
+    color: #fff;
+    font-size: 2.5vh;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .navbar.active .nav-link:hover,
 .navbar.active .nav-link:focus {
-    color: rgb(136, 136, 136);
+    color: rgb(209, 207, 207);
     text-decoration: none;
 }
 
 .navbar.active .navbar-brand {
-    color: #555;
+    color: #fff;
 }
 
 .cars {
@@ -132,6 +133,10 @@ ul.aboutUsBody li.aboutUsBody {
 
 #whatIsTelehealth {
     padding-right: 200px;
+}
+
+.btn {
+    background: #D8C3A5;
 }
 
 /* Desktop View */
