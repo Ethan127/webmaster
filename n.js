@@ -67,7 +67,7 @@ function isInViewport(node) {
 
 
 var navbar = `
-<nav id="nav" class="navbar navbar-expand-lg fixed-top">
+<nav id="nav" class="navbar navbar-expand-lg fixed-top" style = "text-align-center">
     <div class="container"><a href="index.html" class="navbar-brand text-uppercase font-courier font-weight-bold"></a>
         
         <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
@@ -81,7 +81,6 @@ var navbar = `
                 <li id="contactl" class="nav-item"><a href="contact.html" class="nav-link font-weight-bold">Contact</a></li>
                 <li id="sourcesl" class="nav-item"><a href="sources.html" class="nav-link font-weight-bold">Sources</a></li>
                 <li id="docl" class="nav-item"><a href="doc.html" class="nav-link font-weight-bold">Documentation</a></li>
-                <!--<li id="mainl" class="nav-item"><a href="rockcanyon/index.html" class="nav-link font-weight-bold">Main Website</a></li>-->
             </ul>
         </div>
 
