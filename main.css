@@ -158,18 +158,16 @@ ul.aboutUsBody li.aboutUsBody {
 
 
 .btn {
-    background: #D8C3A5;
+    background: #e98074;
+    border-color: #d85243;
 }
 .leftb .rightb {
-    width: auto;
-    height: auto;
-    background: #202020;
     color: #fff;
     cursor: pointer;
 }
 
 .leftb:hover, .rightb:hover {
-    background: #000000;
+    background: #d85243;
 }
 
 
