@@ -28,7 +28,7 @@
             //Anthony's Spaghetti
             
             let pgs = [
-                `<<table class="table">
+                `<table class="table">
                 <thead>
                   <tr>
                     <th scope="col">Time</th>
@@ -63,11 +63,11 @@
                     <td>@Vanya_Pavlovsky</td>
                   </tr>
                 </tbody>
-              </table>>`,
+              </table>`,
 
 
 
-                `<<table class="table">
+                `<table class="table">
                     <thead>
                       <tr>
                         <th scope="col">Time</th>
@@ -105,7 +105,7 @@
                   </table>>`,
 
 
-                `<<table class="table">
+                `<table class="table">
                     <thead>
                       <tr>
                         <th scope="col">Time</th>
@@ -140,10 +140,10 @@
                         <td>@LanaJackson</td>
                       </tr>
                     </tbody>
-                  </table>>`,
+                  </table>`,
 
 
-                `<<table class="table">
+                `<table class="table">
                     <thead>
                       <tr>
                         <th scope="col">Time</th>
@@ -162,7 +162,7 @@
                       <tr>
                         <th>10:45-12:00</th>
                         <td>Jennifer Conway</td>
-                        <td>The art of Architecture</td>
+                        <td>The Art of Architecture</td>
                         <td>@Ethan_Schnathorst</td>
                       </tr>
                       <tr>
@@ -175,30 +175,123 @@
                         <th>14:00 - 15:30</th>
                         <td>Chen Xun</td>
                         <td>The Logistics of High Speed Rail</td>
-                        <td>@LanaJackson</td>
+                        <td>@ChenXun99</td>
                       </tr>
                     </tbody>
-                  </table>>`,
+                  </table>`,
 
 
-                `<h5 class="pt-5 text-black">
-                5
-            </h5>`,
+                `<table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Time</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Topic</th>
+                        <th scope="col">Contact</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>9:00-10:00</th>
+                        <td>Sarah Connor</td>
+                        <td>The Dangers of AI</td>
+                        <td>@Sarah_Connor</td>
+                      </tr>
+                      <tr>
+                        <th>10:30-12:00</th>
+                        <td>Jared Brogdan</td>
+                        <td>A Future in Aeronautics</td>
+                        <td>@Jared_Brogdan</td>
+                      </tr>
+                      <tr>
+                        <th>12:30-13:30</th>
+                        <td>Francis Jones</td>
+                        <td>The Potential of 3D Printing</td>
+                        <td>@Francis_Jones12</td>
+                      </tr>
+                      <tr>
+                        <th>14:00 - 15:30</th>
+                        <td>Quinn Pogge</td>
+                        <td>The Future of VR</td>
+                        <td>@Pogge19</td>
+                      </tr>
+                    </tbody>
+                  </table>`,
 
 
-                `<h5 class="pt-5 text-black">
-                6
-            </h5>`,
+                `<table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Time</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Topic</th>
+                        <th scope="col">Contact</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>9:00-10:00</th>
+                        <td>Ronald Cornas</td>
+                        <td>The Inequality in Technology</td>
+                        <td>@Sarah_Connor</td>
+                      </tr>
+                      <tr>
+                        <th>10:30-11:30</th>
+                        <td>Ava Johanssen</td>
+                        <td>Modern Espionage</td>
+                        <td>@AvaJohanssen3</td>
+                      </tr>
+                      <tr>
+                        <th>12:00-12:30</th>
+                        <td>Donald Evans</td>
+                        <td>The Next Generation of Satallites</td>
+                        <td>@Donald_Evans_3</td>
+                      </tr>
+                      <tr>
+                        <th>13:00 - 14:00</th>
+                        <td>Albert Rosier</td>
+                        <td>Physics</td>
+                        <td>@RosierA1337</td>
+                      </tr>
+                    </tbody>
+                  </table>`,
 
 
-                `<h5 class="pt-5 text-black">
-                7
-            </h5>`
+                `<table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Time</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Topic</th>
+                        <th scope="col">Contact</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>10:00-11:00</th>
+                        <td>Timothy Feng</td>
+                        <td>Nurishing Interest in Computer Science</td>
+                        <td>@Timothy_Feng</td>
+                      </tr>
+                      <tr>
+                        <th>10:30-12:00</th>
+                        <td>Chris Evans</td>
+                        <td>Materials and You</td>
+                        <td>@Chris_Evans</td>
+                      </tr>
+                      <tr>
+                        <th>12:30-13:30</th>
+                        <td>Rupert Grint</td>
+                        <td>The Modern Subtlety of Telecommunications</td>
+                        <td>@Rupert_Grint</td>
+                      </tr>
+                    </tbody>
+                  </table>`
             ]
 
             let dates = [
                 `<h1>
-                <b class="pt-5 text-black">June 1</b>
+                <b class="pt-5 text-black" >June 1</b>
             </h1>`,
                 `<h1>
                 <b class="pt-5 text-black">June 2</b>
@@ -227,9 +320,9 @@
 
 
             $("#left").click(function () {
-                pg -= 1;
-                if (pg > 7) {
-                    pg = 1;
+                pg = pg - 1;
+                if (pg < 1) {
+                    pg = 7;
                 }
                 document.getElementById("page").innerHTML = pgs[pg - 1];
                 document.getElementById("date").innerHTML = dates[pg - 1];
@@ -266,11 +359,15 @@
             <div style="width: 100%; text-align: center; position: absolute; top: 30vh;"></div>
         </div>
     </header>
-
-    <div class="container">
-        <button type="button" id="left" class="btn leftb"><</button>
-                <div id="date"></div>
-                <button type="button" id="right" class="btn rightb">></button>
+    <div class="container" >
+      
+        <button type="button" id="left" class="btn leftb btn-lg" style="float:left;margin-top: 10vh;margin-right:1%;"><</button>
+        <p  id="date" style="float:left; margin-top: 10vh;"></p>
+        <button type="button" id="right" class="btn rightb btn-lg" style="float:left;margin-top: 10vh; margin-left:1%;">></button>
+        
+        
+        
+      
     </div>
 
     <div class="container">
