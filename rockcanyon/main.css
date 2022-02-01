@@ -45,7 +45,7 @@ body {
 }
 
 .navbar.active .nav-link {
-    color: rgba(153, 153, 153, );
+    color: rgba(153, 153, 153, 0);
 }
 
 .navbar.active .nav-link:hover,

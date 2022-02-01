@@ -84,10 +84,9 @@ body {
 
 /* Change navbar styling on scroll */
 .navbar.active {
-    background: #d8c3a500;
+    background: #aaa9a700;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
     text-align: left;
-    scroll-snap-align: left to right;
 }
 
 .navbar.active .nav-link {
@@ -155,7 +154,9 @@ ul.aboutUsBody li.aboutUsBody {
     padding-right: 200px;
 }
 
-
+.blackText {
+    color:#000;
+}
 
 .btn {
     background: #e98074;
