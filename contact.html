@@ -19,7 +19,6 @@
         AOS.init();
         document.getElementById("title").innerHTML = name;
         document.getElementById("nav").innerHTML = navbar;
-        window.onload=parallaxEffect();
         document.getElementById("contactl").classList.add("active");
     });
     window.onload=otherNav(); //Changes transparency of navbar on scroll
@@ -28,7 +27,7 @@
 </head>
 <body>
 
-<div class="honeycomb parallax">
+<div class=" parallax">
 <div class="container" id="contactp" style="overflow-x: hidden">
 <header class="header">
     <div id="nav"></div>
@@ -36,9 +35,23 @@
 
 
 <div style="padding: 100px; padding-top: 100px;">
-<section class="mb-4 pt-5 text-white">
+<section class="mb-4 pt-5 text-white" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
 
-    <h2 class="pt-5 text-white text-center">Contact Us</h2><br><br>
+    <div class="py-1" style="text-align: center;">
+
+        <div class="row" style="padding-bottom: 25px; padding-top: 25px; background-color:#8e8d8a00;">
+            <div data-aos="fade-down" class="col">
+                    <!-- CHANGE NAME LAETER -->
+                    <h1>
+                        <b class="pt-5 text-white" style="font-size: 8vh">Contact Us!</b>
+                    </h1>
+                
+            </div>
+            
+        </div>
+        
+    </div>   
+
     <div class="row text-center">
         <div class="col-sm"><i class="fas fa-map-marker-alt mt-4 fa-2x"></i>
             <p>Highlands Ranch, CO 80129, USA</p>
